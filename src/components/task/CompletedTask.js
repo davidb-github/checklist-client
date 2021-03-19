@@ -1,7 +1,7 @@
 import React, { useContext } from "react"
 import Button from 'react-bootstrap/Button'
 import { TaskContext } from "./TaskProvider"
-import "./CompletedTask.css"
+
 
 
 export const CompletedTask = ({ task }) => {
