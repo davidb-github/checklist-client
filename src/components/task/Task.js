@@ -13,7 +13,7 @@ export const Task = ({ task }) => {
             <div className="task__name">Title: {task.task_name} </div>
             <div className="task__description">Content: {task.task_description} </div>
             <div className="task__creationDate">Creation Date: {task.creation_date} </div>
-            <Link key={task.id} id={task.id} to={{ pathname: `/edit/${task.id}`, state: { selectedTask: task } }} >
+            <Link key={task.id} id={task.id} to={{ pathname: `/edit/${task.id}`, state: { selectedTask: task }, taskId: task.id }} >
                 <Button variant="warning"> Edit Task </Button>
             </Link>
             
