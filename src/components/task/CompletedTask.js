@@ -13,7 +13,7 @@ export const CompletedTask = ({ task }) => {
             <div className="task__name">Title: {task.task_name}</div>
             <div className="task__description">Content: {task.task_description}</div>
             
-            <Button variant="danger" onClick={() => deleteTask(task.id)}> Delete Task </Button>
+            <Button onClick={() => deleteTask(task.id)}> Delete Task </Button>
         </section >
     )
 }

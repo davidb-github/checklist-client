@@ -13,12 +13,13 @@ export const Task = ({ task }) => {
             <div className="task__name">Title: {task.task_name} </div>
             <div className="task__description">Content: {task.task_description} </div>
             <div className="task__creationDate">Creation Date: {task.creation_date} </div>
+            
             <Link key={task.id} id={task.id} to={{ pathname: `/edit/${task.id}`, state: { selectedTask: task }, taskId: task.id }} >
-                <Button variant="warning"> Edit Task </Button>
+                <Button> Edit Task </Button>
             </Link>
             
-            <Button variant="success" onClick={() => updateTaskStatus(task.id)} > Mark As Completed Task </Button>
-            <Button variant="danger" onClick={() => deleteTask(task.id)}> Delete Task </Button>
+            <Button onClick={() => updateTaskStatus(task.id)} > Mark As Completed Task </Button>
+            <Button onClick={() => deleteTask(task.id)}> Delete Task </Button>
         </section >
     )
 }
