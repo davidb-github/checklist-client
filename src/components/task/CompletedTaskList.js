@@ -15,7 +15,7 @@ export const CompletedTaskList = (props) => {
             <article className="completedTaskList">
                 {
                     // Return tasks who are marked as complete
-                    tasks.filter(task => { return task.is_complete == true })
+                    tasks.filter(task => { return task.is_complete === true })
                         // Map through returned results and render them to DOM
                         .map(task => { return <CompletedTask key={task.id} task={task} /> })
                 }

@@ -12,7 +12,7 @@ export const NavBar = (props) => {
             <Link className="navbar__link" to="/create">Create a Task</Link>
             </li>
             <li className="navbar__item">
-            <Link className="navbar__link" to="/completed">Completed Task</Link>
+            <Link className="navbar__link" to="/completed">Completed Tasks</Link>
             </li>
             {
                 (localStorage.getItem("checklist_token") !== null) ?
