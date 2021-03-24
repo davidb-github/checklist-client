@@ -18,7 +18,7 @@ export const Task = ({ task }) => {
                 <Button> Edit Task </Button>
             </Link>
             
-            <Button onClick={() => updateTaskStatus(task.id)} > Mark As Completed Task </Button>
+            <Button onClick={() => updateTaskStatus(task.id)} > Mark Task as Complete</Button>
             <Button onClick={() => deleteTask(task.id)}> Delete Task </Button>
         </section >
     )
